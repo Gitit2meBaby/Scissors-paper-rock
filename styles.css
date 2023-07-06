@@ -1,0 +1,120 @@
+.gameboard {
+    background-image: url('backdrop.png');
+    height: 600px;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    image-rendering: pixelated;
+    width: 70%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 20%;
+    align-self: center;
+    margin: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: red;
+}
+.choice {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.user-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    height: 100px;
+    width: 220px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+.computer-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    height: 100px;
+    width: 220px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.lost-image {
+    display: none;
+   position: absolute;
+   align-self: center;
+   justify-content: center;
+   margin-top: 100px;
+   height: 500px;
+   width: auto;
+
+}
+
+.draw-image {
+    display: none;
+   position: absolute;
+   margin-top: 100px;
+   height: 500px;
+   width: auto;
+}
+
+.win-image {
+    display: none;
+   position: absolute;
+   justify-content: center;
+   align-self: center;
+   margin-top: 100px;
+   height: 600px;
+   width: auto;
+}
+
+.tunes {
+    margin-left: 600px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    background-color: lightgreen;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.tunes:active {
+    background-color: red;
+}
