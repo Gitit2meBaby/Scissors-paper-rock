@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scissors, Paper, Rock</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scissors, Paper, Rock</title>
 </head>
+
 <body>
-    
-<div class="gameboard">
-    <button id="tunes" class="tunes">Tunes</button>
+
+  <div class="gameboard">
+    <button id="tunes-btn" class="tunes">Tunes</button>
     <h2> Choose your weapon...</h2>
     <button class="rock">Rock</button>
     <button class="paper">Paper</button>
     <button class="scissors">Scissors</button>
     <div class="choice">
-        <div class="user-choice"></div>
-        <div class="computer-choice"></div>
+      <div class="user-choice"></div>
+      <div class="computer-choice"></div>
     </div>
     <div class="lost-image"><img src="wasted.png" alt="gta wasted"></div>
     <div class="draw-image"><img src="draw.png" alt="mr Bean"></div>
     <div class="win-image"><img src="win.png" alt="Davie504"></div>
-    <div><span class="result"></span></div>
-</div>
+  </div>
 
-<audio id="tunes" loop>
+  <div id="scoreDisplayContainer" class="score-display">
+    <div class="user-score-display">
+      <h2>Your Score</h2>
+      <h2 id="userScore"></h2>
+    </div>
+    <div class="computer-score-display">
+      <h2>Computer Score</h2>
+      <h2 id="computerScore"></h2>
+    </div>
+  </div>
+
+  <div id="gameOverContainer" class="gameover-board">
+    <h1 id="youLose">YOU LOSE!</h1>
+    <h1 id="youWin">YOU WIN</h1>
+    <h1 id="draw">DRAW</h1>
+    <button id="playAgain">PLAY AGAIN</button>
+  </div>
+
+  <audio id="tunes" loop>
     <source src="title.mp3" type="audio/mpeg">
   </audio>
-  
 
-<audio id="winSound">
+
+  <audio id="winSound">
     <source src="win.wav" type="audio/mpeg">
   </audio>
-  
+
   <audio id="lossSound">
     <source src="lost.wav" type="audio/mpeg">
   </audio>
-  
+
   <audio id="drawSound">
     <source src="draw.wav" type="audio/mpeg">
   </audio>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -32,6 +32,7 @@ button {
 button:hover {
     background-color: red;
 }
+
 .choice {
     display: flex;
     position: relative;
@@ -39,6 +40,7 @@ button:hover {
     align-items: center;
     gap: 40px;
 }
+
 .user-choice {
     display: flex;
     justify-content: center;
@@ -67,31 +69,31 @@ button:hover {
 
 .lost-image {
     display: none;
-   position: absolute;
-   align-self: center;
-   justify-content: center;
-   margin-top: 100px;
-   height: 500px;
-   width: auto;
+    position: absolute;
+    align-self: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 500px;
+    width: auto;
 
 }
 
 .draw-image {
     display: none;
-   position: absolute;
-   margin-top: 100px;
-   height: 500px;
-   width: auto;
+    position: absolute;
+    margin-top: 100px;
+    height: 500px;
+    width: auto;
 }
 
 .win-image {
     display: none;
-   position: absolute;
-   justify-content: center;
-   align-self: center;
-   margin-top: 100px;
-   height: 600px;
-   width: auto;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    margin-top: 100px;
+    height: 600px;
+    width: auto;
 }
 
 .tunes {
@@ -103,18 +105,86 @@ button:hover {
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
 .tunes:active {
     background-color: red;
+}
+
+.user-score {
+    display: flex;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.computer-score {
+    display: flex;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.score-display {
+    display: flex;
+    justify-content: space-around;
+    width: 800[x];
+
+}
+
+.score-display h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    image-rendering: pixelated;
+
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+.gameover-board {
+    background-image: url('backdrop.png');
+    height: 600px;
+    width: 800px;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 5px;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    image-rendering: pixelated;
+    width: 70%;
+    align-self: center;
+    margin-top: 20px;
+    display: none;
+    margin-top: 150px;
 }
